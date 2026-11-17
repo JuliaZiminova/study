@@ -1,8 +1,8 @@
 title: Architect Study Plan
 description: Программа прокачки системного аналитика до архитектора решений — подготовительные этапы и 11 блоков с уроками, практикой и вопросами для собеседований
 lang: ru
-url: https://pauljurichm.github.io
-baseurl: /architect-study-plan
+url: https://juliaziminova.github.io
+baseurl: /study
 
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 plugins:
@@ -29,13 +29,13 @@ mermaid:
   version: "11.4.1"
 
 aux_links:
-  "Репозиторий": https://github.com/PaulJurichM/architect-study-plan
+  "Репозиторий": https://github.com/JuliaZiminova/study
 aux_links_new_tab: true
 
 
 gh_edit_link: true
 gh_edit_link_text: "Редактировать на GitHub"
-gh_edit_repository: https://github.com/PaulJurichM/architect-study-plan
+gh_edit_repository: https://github.com/JuliaZiminova/study
 gh_edit_branch: main
 gh_edit_view_mode: edit
 
