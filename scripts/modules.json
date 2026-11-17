@@ -1,0 +1,1120 @@
+{
+  "version": 2,
+  "labels": [
+    {
+      "name": "stage-0a-foundations",
+      "color": "8b949e",
+      "description": "Этап 0А: техническая база"
+    },
+    {
+      "name": "stage-0b-bridge",
+      "color": "6e7781",
+      "description": "Этап 0Б: мост к архитектуре"
+    },
+    {
+      "name": "stage-0v-sql",
+      "color": "0969da",
+      "description": "Этап 0В: SQL-практикум"
+    },
+    {
+      "name": "block-1-http",
+      "color": "1f6feb",
+      "description": "HTTP, REST, безопасность"
+    },
+    {
+      "name": "block-2-postgres",
+      "color": "336791",
+      "description": "PostgreSQL изнутри"
+    },
+    {
+      "name": "block-3-architecture",
+      "color": "8250df",
+      "description": "Микросервисы, DDD, устойчивость"
+    },
+    {
+      "name": "capstone",
+      "color": "d29922",
+      "description": "Итоговый проект"
+    },
+    {
+      "name": "block-5-ai",
+      "color": "0e8a16",
+      "description": "ИИ в архитектуре систем"
+    },
+    {
+      "name": "block-6-practice",
+      "color": "5319e7",
+      "description": "Архитектурная практика"
+    },
+    {
+      "name": "block-7-system-design",
+      "color": "b60205",
+      "description": "System Design"
+    },
+    {
+      "name": "block-8-integration",
+      "color": "1d76db",
+      "description": "Интеграционные паттерны"
+    },
+    {
+      "name": "block-9-data",
+      "color": "fbca04",
+      "description": "Данные и аналитика"
+    },
+    {
+      "name": "block-10-infra",
+      "color": "006b75",
+      "description": "Инфраструктура и поставка"
+    },
+    {
+      "name": "block-11-role",
+      "color": "e99695",
+      "description": "Архитектор как роль"
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Этап 0А. Техническая база",
+      "description": "Для бизнес-аналитика и junior: как устроено то, что описывается в требованиях. 10 недель."
+    },
+    {
+      "title": "Этап 0Б. Мост к архитектуре",
+      "description": "Для системного аналитика middle: механизмы под интеграциями, данными и сервисами. 9 недель."
+    },
+    {
+      "title": "Этап 0В. SQL-практикум",
+      "description": "Практикум на учебной базе маркетплейса с грязными данными: соединения, CTE, окна, даты, расследование расхождений, производительность, SQL-интервью. 4 недели."
+    },
+    {
+      "title": "Блок 1. HTTP, REST и безопасность",
+      "description": "Недели 1–10, параллельный трек"
+    },
+    {
+      "title": "Блок 2. PostgreSQL изнутри",
+      "description": "Недели 1–5"
+    },
+    {
+      "title": "Блок 3. Микросервисы, DDD и устойчивость",
+      "description": "Недели 5–10"
+    },
+    {
+      "title": "Итоговый проект",
+      "description": "Недели 11–12"
+    },
+    {
+      "title": "Блок 5. ИИ в архитектуре систем",
+      "description": "Как устроены системы на основе больших языковых моделей и ML: RAG, агенты и инструменты, оценка качества, безопасность, эксплуатация моделей. Отдельный модуль — как аналитику постановить ИИ-функцию…"
+    },
+    {
+      "title": "Блок 6. Архитектурная практика",
+      "description": "Как архитектор принимает, обосновывает и фиксирует решения: атрибуты качества, ADR, модели C4 и arc42, анализ компромиссов, эволюция архитектуры и работа с легаси. Это то, что отличает архитектора от…"
+    },
+    {
+      "title": "Блок 7. System Design",
+      "description": "Интервью по системному дизайну — отдельный жанр: за 45–60 минут спроектировать систему вслух, управляя разговором и показывая компромиссы. Блок даёт метод, оценки, строительные блоки (кэш,…"
+    },
+    {
+      "title": "Блок 8. Интеграционные паттерны",
+      "description": "В реальных проектах интеграции — это не только REST: gRPC между сервисами, GraphQL для фронтенда, пакетный обмен файлами с банками и поставщиками, CDC между базами, SOAP и шины у крупных заказчиков.…"
+    },
+    {
+      "title": "Блок 9. Данные и аналитика",
+      "description": "Операционные системы производят данные, аналитические системы превращают их в отчёты, прогнозы и решения. Блок о том, как устроены аналитические хранилища, как моделировать данные для анализа, как…"
+    },
+    {
+      "title": "Блок 10. Инфраструктура и поставка",
+      "description": "Архитектору не нужно администрировать Kubernetes, но нужно понимать, как система будет развёрнута, выпущена, восстановлена после аварии и сколько это стоит. Без этого требования к развёртыванию,…"
+    },
+    {
+      "title": "Блок 11. Архитектор как роль",
+      "description": "Техническое решение ничего не стоит, если его не приняли люди. Архитектор большую часть времени договаривается: выясняет интересы стейкхолдеров, проводит ревью, оценивает сроки, фасилитирует…"
+    }
+  ],
+  "issues": [
+    {
+      "id": "А.1",
+      "title": "А.1 Как устроено приложение: клиент, сервер, база данных",
+      "path": "00a-foundations/a1-how-apps-work.md",
+      "week": "1 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": []
+    },
+    {
+      "id": "А.2",
+      "title": "А.2 Как работает веб: URL, HTTP-запрос и ответ",
+      "path": "00a-foundations/a2-web-http-basics.md",
+      "week": "2 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": []
+    },
+    {
+      "id": "А.3",
+      "title": "А.3 Данные и форматы: JSON, XML, CSV, типы данных",
+      "path": "00a-foundations/a3-data-formats.md",
+      "week": "3 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": [
+        "А.2"
+      ]
+    },
+    {
+      "id": "А.4",
+      "title": "А.4 Реляционные базы данных: таблицы, ключи, связи, ER-диаграммы",
+      "path": "00a-foundations/a4-relational-model.md",
+      "week": "4 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": [
+        "А.3"
+      ]
+    },
+    {
+      "id": "А.5",
+      "title": "А.5 SQL для аналитика: от SELECT до JOIN и GROUP BY",
+      "path": "00a-foundations/a5-sql-basics.md",
+      "week": "5–6 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": [
+        "А.4"
+      ]
+    },
+    {
+      "id": "А.6",
+      "title": "А.6 API и интеграции глазами аналитика",
+      "path": "00a-foundations/a6-integrations-intro.md",
+      "week": "7 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": [
+        "А.2",
+        "А.3"
+      ]
+    },
+    {
+      "id": "А.7",
+      "title": "А.7 Моделирование: UML и BPMN для системного аналитика",
+      "path": "00a-foundations/a7-uml-bpmn.md",
+      "week": "8 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": [
+        "А.6"
+      ]
+    },
+    {
+      "id": "А.8",
+      "title": "А.8 Процесс разработки: от задачи до релиза",
+      "path": "00a-foundations/a8-dev-process.md",
+      "week": "9 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": []
+    },
+    {
+      "id": "А.9",
+      "title": "А.9 От бизнес-требования к системному: user story, use case, спецификация",
+      "path": "00a-foundations/a9-system-requirements.md",
+      "week": "10 (этап 0А)",
+      "milestone": "Этап 0А. Техническая база",
+      "label": "stage-0a-foundations",
+      "prereq": [
+        "А.6",
+        "А.7",
+        "А.8"
+      ]
+    },
+    {
+      "id": "Б.1",
+      "title": "Б.1 Сеть для интеграций: IP, порты, DNS, TCP, прокси",
+      "path": "00b-bridge/b1-networking.md",
+      "week": "1 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "А.2"
+      ]
+    },
+    {
+      "id": "Б.2",
+      "title": "Б.2 Основы безопасности: криптография, аутентификация, авторизация",
+      "path": "00b-bridge/b2-security-basics.md",
+      "week": "2 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "А.2",
+        "Б.1"
+      ]
+    },
+    {
+      "id": "Б.3",
+      "title": "Б.3 Проектирование контракта API: ресурсы, OpenAPI, ошибки, совместимость",
+      "path": "00b-bridge/b3-api-contracts.md",
+      "week": "3 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "А.3",
+        "А.6"
+      ]
+    },
+    {
+      "id": "Б.4",
+      "title": "Б.4 SQL глубже и транзакции: оконные функции, индексы, EXPLAIN, конкурентность",
+      "path": "00b-bridge/b4-sql-transactions.md",
+      "week": "4–5 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "А.5"
+      ]
+    },
+    {
+      "id": "Б.5",
+      "title": "Б.5 Асинхронный обмен: очереди, брокеры, гарантии доставки",
+      "path": "00b-bridge/b5-async-messaging.md",
+      "week": "6 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "А.6"
+      ]
+    },
+    {
+      "id": "Б.6",
+      "title": "Б.6 Архитектура приложения: слои, монолит и сервисы, инфраструктура",
+      "path": "00b-bridge/b6-app-architecture.md",
+      "week": "7 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "А.1"
+      ]
+    },
+    {
+      "id": "Б.7",
+      "title": "Б.7 Описание решения: спецификация интеграции, диаграммы, нефункциональные требования",
+      "path": "00b-bridge/b7-documenting-solutions.md",
+      "week": "8 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "А.7",
+        "А.9"
+      ]
+    },
+    {
+      "id": "Б.8",
+      "title": "Б.8 Распределённые системы: базовые понятия",
+      "path": "00b-bridge/b8-distributed-basics.md",
+      "week": "9 (этап 0Б)",
+      "milestone": "Этап 0Б. Мост к архитектуре",
+      "label": "stage-0b-bridge",
+      "prereq": [
+        "Б.5",
+        "Б.6"
+      ]
+    },
+    {
+      "id": "В.1",
+      "title": "В.1 Разведка незнакомой базы: схема, гранулярность, профиль данных",
+      "path": "00c-sql-practicum/v1-data-recon.md",
+      "week": "1 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "А.4",
+        "А.5"
+      ]
+    },
+    {
+      "id": "В.2",
+      "title": "В.2 Соединения без потерь и размножения: гранулярность, anti-join, ловушки NULL",
+      "path": "00c-sql-practicum/v2-joins.md",
+      "week": "1 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "А.5",
+        "В.1"
+      ]
+    },
+    {
+      "id": "В.3",
+      "title": "В.3 CTE и декомпозиция: как собрать сложный запрос по шагам и прочитать чужой",
+      "path": "00c-sql-practicum/v3-cte-decomposition.md",
+      "week": "2 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "Б.4",
+        "В.2"
+      ]
+    },
+    {
+      "id": "В.4",
+      "title": "В.4 Оконные функции в работе: дедупликация, последнее состояние, интервалы, серии",
+      "path": "00c-sql-practicum/v4-window-functions.md",
+      "week": "2 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "Б.4",
+        "В.3"
+      ]
+    },
+    {
+      "id": "В.5",
+      "title": "В.5 Время и даты: часовые пояса, календари, сроки, когорты",
+      "path": "00c-sql-practicum/v5-dates-timezones.md",
+      "week": "3 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "В.4"
+      ]
+    },
+    {
+      "id": "В.6",
+      "title": "В.6 Расследование расхождений: почему цифры в двух отчётах не сходятся",
+      "path": "00c-sql-practicum/v6-reconciliation.md",
+      "week": "3 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "В.2",
+        "В.5"
+      ]
+    },
+    {
+      "id": "В.7",
+      "title": "В.7 Производительность запроса аналитика: план, фильтры, индексы, вежливость к базе",
+      "path": "00c-sql-practicum/v7-query-performance.md",
+      "week": "4 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "Б.4",
+        "В.3"
+      ]
+    },
+    {
+      "id": "В.8",
+      "title": "В.8 SQL-интервью и сквозной кейс: «почему опаздывают заказы»",
+      "path": "00c-sql-practicum/v8-interview-case.md",
+      "week": "4 (этап 0В)",
+      "milestone": "Этап 0В. SQL-практикум",
+      "label": "stage-0v-sql",
+      "prereq": [
+        "В.4",
+        "В.6",
+        "В.7"
+      ]
+    },
+    {
+      "id": "1.1",
+      "title": "1.1 Путь HTTP-запроса: DNS, TCP, TLS, HTTP/1.1–2–3",
+      "path": "01-http-rest-security/1.1-request-lifecycle.md",
+      "week": "1",
+      "milestone": "Блок 1. HTTP, REST и безопасность",
+      "label": "block-1-http",
+      "prereq": [
+        "А.2",
+        "Б.1"
+      ]
+    },
+    {
+      "id": "1.2",
+      "title": "1.2 TLS и PKI: сертификаты, цепочки доверия, mTLS",
+      "path": "01-http-rest-security/1.2-tls-pki.md",
+      "week": "2–3",
+      "milestone": "Блок 1. HTTP, REST и безопасность",
+      "label": "block-1-http",
+      "prereq": [
+        "Б.2",
+        "1.1"
+      ]
+    },
+    {
+      "id": "1.3",
+      "title": "1.3 REST-семантика: идемпотентность, кэширование, ошибки, версионирование",
+      "path": "01-http-rest-security/1.3-rest-semantics.md",
+      "week": "4–5",
+      "milestone": "Блок 1. HTTP, REST и безопасность",
+      "label": "block-1-http",
+      "prereq": [
+        "А.2",
+        "Б.3"
+      ]
+    },
+    {
+      "id": "1.4",
+      "title": "1.4 OAuth 2.0, OpenID Connect, JWT",
+      "path": "01-http-rest-security/1.4-oauth-oidc-jwt.md",
+      "week": "6–7",
+      "milestone": "Блок 1. HTTP, REST и безопасность",
+      "label": "block-1-http",
+      "prereq": [
+        "Б.2",
+        "1.2"
+      ]
+    },
+    {
+      "id": "1.5",
+      "title": "1.5 Защита API: OWASP API Top 10, подписи, вебхуки, rate limiting",
+      "path": "01-http-rest-security/1.5-api-security.md",
+      "week": "8–9",
+      "milestone": "Блок 1. HTTP, REST и безопасность",
+      "label": "block-1-http",
+      "prereq": [
+        "Б.2",
+        "1.3",
+        "1.4"
+      ]
+    },
+    {
+      "id": "2.1",
+      "title": "2.1 MVCC и хранение: версии строк, VACUUM, bloat",
+      "path": "02-postgresql/2.1-mvcc-storage.md",
+      "week": "1",
+      "milestone": "Блок 2. PostgreSQL изнутри",
+      "label": "block-2-postgres",
+      "prereq": [
+        "А.4",
+        "Б.4"
+      ]
+    },
+    {
+      "id": "2.2",
+      "title": "2.2 Изоляция транзакций и аномалии + лаба 1",
+      "path": "02-postgresql/2.2-isolation.md",
+      "week": "2",
+      "milestone": "Блок 2. PostgreSQL изнутри",
+      "label": "block-2-postgres",
+      "prereq": [
+        "Б.4",
+        "2.1"
+      ]
+    },
+    {
+      "id": "2.3",
+      "title": "2.3 Блокировки: табличные, строчные, advisory, дедлоки, DDL + лаба 2",
+      "path": "02-postgresql/2.3-locks.md",
+      "week": "3",
+      "milestone": "Блок 2. PostgreSQL изнутри",
+      "label": "block-2-postgres",
+      "prereq": [
+        "Б.4",
+        "2.2"
+      ]
+    },
+    {
+      "id": "2.4",
+      "title": "2.4 Планировщик: статистика, методы доступа, соединения, EXPLAIN + лаба 3",
+      "path": "02-postgresql/2.4-planner.md",
+      "week": "4",
+      "milestone": "Блок 2. PostgreSQL изнутри",
+      "label": "block-2-postgres",
+      "prereq": [
+        "А.5",
+        "Б.4"
+      ]
+    },
+    {
+      "id": "2.5",
+      "title": "2.5 Индексы в глубину",
+      "path": "02-postgresql/2.5-indexes.md",
+      "week": "4",
+      "milestone": "Блок 2. PostgreSQL изнутри",
+      "label": "block-2-postgres",
+      "prereq": [
+        "Б.4",
+        "2.4"
+      ]
+    },
+    {
+      "id": "2.6",
+      "title": "2.6 WAL, репликация, безопасные миграции",
+      "path": "02-postgresql/2.6-wal-replication-migrations.md",
+      "week": "5",
+      "milestone": "Блок 2. PostgreSQL изнутри",
+      "label": "block-2-postgres",
+      "prereq": [
+        "А.8",
+        "2.1"
+      ]
+    },
+    {
+      "id": "3.1",
+      "title": "3.1 Зачем микросервисы и когда лучше модульный монолит",
+      "path": "03-microservices-ddd/3.1-why-microservices.md",
+      "week": "5",
+      "milestone": "Блок 3. Микросервисы, DDD и устойчивость",
+      "label": "block-3-architecture",
+      "prereq": [
+        "А.1",
+        "Б.6"
+      ]
+    },
+    {
+      "id": "3.2",
+      "title": "3.2 Стратегический DDD: поддомены, контексты, карта контекстов",
+      "path": "03-microservices-ddd/3.2-strategic-ddd.md",
+      "week": "6",
+      "milestone": "Блок 3. Микросервисы, DDD и устойчивость",
+      "label": "block-3-architecture",
+      "prereq": [
+        "А.9",
+        "3.1"
+      ]
+    },
+    {
+      "id": "3.3",
+      "title": "3.3 Сеть: OSI, балансировщик, API Gateway, service mesh",
+      "path": "03-microservices-ddd/3.3-network-gateway-lb.md",
+      "week": "7",
+      "milestone": "Блок 3. Микросервисы, DDD и устойчивость",
+      "label": "block-3-architecture",
+      "prereq": [
+        "Б.1",
+        "Б.6",
+        "1.1"
+      ]
+    },
+    {
+      "id": "3.4",
+      "title": "3.4 Коммуникация: синхронная, асинхронная, брокеры, гарантии",
+      "path": "03-microservices-ddd/3.4-communication.md",
+      "week": "8",
+      "milestone": "Блок 3. Микросервисы, DDD и устойчивость",
+      "label": "block-3-architecture",
+      "prereq": [
+        "А.6",
+        "Б.5"
+      ]
+    },
+    {
+      "id": "3.5",
+      "title": "3.5 Данные: database per service, Saga, Outbox, CQRS",
+      "path": "03-microservices-ddd/3.5-data-patterns.md",
+      "week": "9",
+      "milestone": "Блок 3. Микросервисы, DDD и устойчивость",
+      "label": "block-3-architecture",
+      "prereq": [
+        "Б.5",
+        "Б.8",
+        "2.2"
+      ]
+    },
+    {
+      "id": "3.6",
+      "title": "3.6 Устойчивость: таймауты, ретраи, circuit breaker, bulkhead",
+      "path": "03-microservices-ddd/3.6-resilience.md",
+      "week": "10",
+      "milestone": "Блок 3. Микросервисы, DDD и устойчивость",
+      "label": "block-3-architecture",
+      "prereq": [
+        "Б.8",
+        "1.1"
+      ]
+    },
+    {
+      "id": "3.7",
+      "title": "3.7 Наблюдаемость: логи, метрики, трассировка, SLO",
+      "path": "03-microservices-ddd/3.7-observability.md",
+      "week": "10",
+      "milestone": "Блок 3. Микросервисы, DDD и устойчивость",
+      "label": "block-3-architecture",
+      "prereq": [
+        "Б.6",
+        "Б.8"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "4. Итоговый проект: архитектурный пакет",
+      "path": "04-capstone/README.md",
+      "week": "11–12",
+      "milestone": "Итоговый проект",
+      "label": "capstone",
+      "prereq": [
+        "Б.7",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "id": "5.1",
+      "title": "5.1 Как работают LLM: взгляд инженера",
+      "path": "05-ai-engineering/5.1-llm-basics.md",
+      "week": "19",
+      "milestone": "Блок 5. ИИ в архитектуре систем",
+      "label": "block-5-ai",
+      "prereq": [
+        "А.3",
+        "1.3"
+      ]
+    },
+    {
+      "id": "5.2",
+      "title": "5.2 RAG: поиск и генерация по своим данным",
+      "path": "05-ai-engineering/5.2-rag.md",
+      "week": "20",
+      "milestone": "Блок 5. ИИ в архитектуре систем",
+      "label": "block-5-ai",
+      "prereq": [
+        "Б.4",
+        "5.1"
+      ]
+    },
+    {
+      "id": "5.3",
+      "title": "5.3 Агенты, вызов инструментов и MCP",
+      "path": "05-ai-engineering/5.3-agents-tools-mcp.md",
+      "week": "21",
+      "milestone": "Блок 5. ИИ в архитектуре систем",
+      "label": "block-5-ai",
+      "prereq": [
+        "Б.3",
+        "1.4",
+        "5.1"
+      ]
+    },
+    {
+      "id": "5.4",
+      "title": "5.4 Оценка качества ИИ-систем (evals)",
+      "path": "05-ai-engineering/5.4-evals.md",
+      "week": "22",
+      "milestone": "Блок 5. ИИ в архитектуре систем",
+      "label": "block-5-ai",
+      "prereq": [
+        "5.1",
+        "5.2"
+      ]
+    },
+    {
+      "id": "5.5",
+      "title": "5.5 Безопасность LLM-систем",
+      "path": "05-ai-engineering/5.5-llm-security.md",
+      "week": "23",
+      "milestone": "Блок 5. ИИ в архитектуре систем",
+      "label": "block-5-ai",
+      "prereq": [
+        "Б.2",
+        "1.5",
+        "5.3"
+      ]
+    },
+    {
+      "id": "5.6",
+      "title": "5.6 ML-системы в эксплуатации: от данных до переобучения",
+      "path": "05-ai-engineering/5.6-ml-in-production.md",
+      "week": "24",
+      "milestone": "Блок 5. ИИ в архитектуре систем",
+      "label": "block-5-ai",
+      "prereq": [
+        "Б.6",
+        "3.7"
+      ]
+    },
+    {
+      "id": "5.7",
+      "title": "5.7 Как постановить ИИ-функцию: требования, приёмка, эксплуатация",
+      "path": "05-ai-engineering/5.7-ai-feature-requirements.md",
+      "week": "25",
+      "milestone": "Блок 5. ИИ в архитектуре систем",
+      "label": "block-5-ai",
+      "prereq": [
+        "А.9",
+        "6.1",
+        "5.4"
+      ]
+    },
+    {
+      "id": "6.1",
+      "title": "6.1 Атрибуты качества и нефункциональные требования",
+      "path": "06-architecture-practice/6.1-quality-attributes.md",
+      "week": "13–14",
+      "milestone": "Блок 6. Архитектурная практика",
+      "label": "block-6-practice",
+      "prereq": [
+        "А.9",
+        "Б.7"
+      ]
+    },
+    {
+      "id": "6.2",
+      "title": "6.2 Architecture Decision Records: журнал решений",
+      "path": "06-architecture-practice/6.2-adr.md",
+      "week": "15",
+      "milestone": "Блок 6. Архитектурная практика",
+      "label": "block-6-practice",
+      "prereq": [
+        "Б.7"
+      ]
+    },
+    {
+      "id": "6.3",
+      "title": "6.3 Модели и документы: C4, arc42, диаграммы как код",
+      "path": "06-architecture-practice/6.3-c4-arc42.md",
+      "week": "16",
+      "milestone": "Блок 6. Архитектурная практика",
+      "label": "block-6-practice",
+      "prereq": [
+        "А.7",
+        "Б.7"
+      ]
+    },
+    {
+      "id": "6.4",
+      "title": "6.4 Анализ компромиссов и оценка архитектуры",
+      "path": "06-architecture-practice/6.4-tradeoff-analysis.md",
+      "week": "17",
+      "milestone": "Блок 6. Архитектурная практика",
+      "label": "block-6-practice",
+      "prereq": [
+        "6.1",
+        "6.2"
+      ]
+    },
+    {
+      "id": "6.5",
+      "title": "6.5 Эволюционная архитектура, технический долг и модернизация легаси",
+      "path": "06-architecture-practice/6.5-evolutionary-architecture.md",
+      "week": "18",
+      "milestone": "Блок 6. Архитектурная практика",
+      "label": "block-6-practice",
+      "prereq": [
+        "3.1",
+        "6.2"
+      ]
+    },
+    {
+      "id": "7.1",
+      "title": "7.1 Метод: как вести интервью по системному дизайну",
+      "path": "07-system-design/7.1-interview-method.md",
+      "week": "13",
+      "milestone": "Блок 7. System Design",
+      "label": "block-7-system-design",
+      "prereq": [
+        "Б.6",
+        "Б.8"
+      ]
+    },
+    {
+      "id": "7.2",
+      "title": "7.2 Оценки на салфетке: нагрузка, объёмы, пропускная способность",
+      "path": "07-system-design/7.2-estimation.md",
+      "week": "14",
+      "milestone": "Блок 7. System Design",
+      "label": "block-7-system-design",
+      "prereq": [
+        "Б.6",
+        "7.1"
+      ]
+    },
+    {
+      "id": "7.3",
+      "title": "7.3 Кэширование",
+      "path": "07-system-design/7.3-caching.md",
+      "week": "15",
+      "milestone": "Блок 7. System Design",
+      "label": "block-7-system-design",
+      "prereq": [
+        "Б.6",
+        "7.2"
+      ]
+    },
+    {
+      "id": "7.4",
+      "title": "7.4 Масштабирование данных: репликация, шардирование, согласованность",
+      "path": "07-system-design/7.4-scaling-data.md",
+      "week": "16",
+      "milestone": "Блок 7. System Design",
+      "label": "block-7-system-design",
+      "prereq": [
+        "Б.8",
+        "2.6"
+      ]
+    },
+    {
+      "id": "7.5",
+      "title": "7.5 Строительные блоки: очереди, поиск, объектное хранилище, CDN, rate limiting",
+      "path": "07-system-design/7.5-building-blocks.md",
+      "week": "17",
+      "milestone": "Блок 7. System Design",
+      "label": "block-7-system-design",
+      "prereq": [
+        "Б.5",
+        "Б.6",
+        "3.4"
+      ]
+    },
+    {
+      "id": "7.6",
+      "title": "7.6 Классические задачи: разбор и тренировка",
+      "path": "07-system-design/7.6-classic-cases.md",
+      "week": "18",
+      "milestone": "Блок 7. System Design",
+      "label": "block-7-system-design",
+      "prereq": [
+        "7.3",
+        "7.4",
+        "7.5"
+      ]
+    },
+    {
+      "id": "8.1",
+      "title": "8.1 Enterprise Integration Patterns: язык интеграций",
+      "path": "08-integration-patterns/8.1-eip.md",
+      "week": "26",
+      "milestone": "Блок 8. Интеграционные паттерны",
+      "label": "block-8-integration",
+      "prereq": [
+        "Б.5",
+        "3.4"
+      ]
+    },
+    {
+      "id": "8.2",
+      "title": "8.2 gRPC и GraphQL: когда не REST",
+      "path": "08-integration-patterns/8.2-grpc-graphql.md",
+      "week": "26",
+      "milestone": "Блок 8. Интеграционные паттерны",
+      "label": "block-8-integration",
+      "prereq": [
+        "Б.3",
+        "1.3"
+      ]
+    },
+    {
+      "id": "8.3",
+      "title": "8.3 Жизненный цикл API: контракты, версии, управление",
+      "path": "08-integration-patterns/8.3-api-lifecycle.md",
+      "week": "27",
+      "milestone": "Блок 8. Интеграционные паттерны",
+      "label": "block-8-integration",
+      "prereq": [
+        "Б.3",
+        "1.3"
+      ]
+    },
+    {
+      "id": "8.4",
+      "title": "8.4 Пакетные и файловые интеграции, ETL и сверки",
+      "path": "08-integration-patterns/8.4-batch-file-integration.md",
+      "week": "27",
+      "milestone": "Блок 8. Интеграционные паттерны",
+      "label": "block-8-integration",
+      "prereq": [
+        "А.3",
+        "А.6"
+      ]
+    },
+    {
+      "id": "8.5",
+      "title": "8.5 CDC и синхронизация данных между системами",
+      "path": "08-integration-patterns/8.5-cdc-data-sync.md",
+      "week": "27",
+      "milestone": "Блок 8. Интеграционные паттерны",
+      "label": "block-8-integration",
+      "prereq": [
+        "Б.5",
+        "2.6",
+        "3.5"
+      ]
+    },
+    {
+      "id": "8.6",
+      "title": "8.6 Легаси-интеграции: SOAP, шины, iPaaS",
+      "path": "08-integration-patterns/8.6-legacy-esb.md",
+      "week": "27",
+      "milestone": "Блок 8. Интеграционные паттерны",
+      "label": "block-8-integration",
+      "prereq": [
+        "А.3",
+        "8.1"
+      ]
+    },
+    {
+      "id": "9.1",
+      "title": "9.1 OLTP и OLAP: почему отчёты не строят на проде",
+      "path": "09-data-platforms/9.1-oltp-olap.md",
+      "week": "28",
+      "milestone": "Блок 9. Данные и аналитика",
+      "label": "block-9-data",
+      "prereq": [
+        "А.5",
+        "2.4"
+      ]
+    },
+    {
+      "id": "9.2",
+      "title": "9.2 Моделирование хранилища данных: Кимбалл, Data Vault, слои",
+      "path": "09-data-platforms/9.2-dwh-modeling.md",
+      "week": "28",
+      "milestone": "Блок 9. Данные и аналитика",
+      "label": "block-9-data",
+      "prereq": [
+        "А.4",
+        "9.1"
+      ]
+    },
+    {
+      "id": "9.3",
+      "title": "9.3 Конвейеры данных: ETL, ELT, оркестрация, потоковая обработка",
+      "path": "09-data-platforms/9.3-pipelines-streaming.md",
+      "week": "29",
+      "milestone": "Блок 9. Данные и аналитика",
+      "label": "block-9-data",
+      "prereq": [
+        "Б.5",
+        "9.2"
+      ]
+    },
+    {
+      "id": "9.4",
+      "title": "9.4 Аналитические СУБД и выбор хранилища для данных",
+      "path": "09-data-platforms/9.4-analytical-engines.md",
+      "week": "29",
+      "milestone": "Блок 9. Данные и аналитика",
+      "label": "block-9-data",
+      "prereq": [
+        "2.5",
+        "9.1"
+      ]
+    },
+    {
+      "id": "9.5",
+      "title": "9.5 Качество данных, контракты данных, data mesh",
+      "path": "09-data-platforms/9.5-data-quality-governance.md",
+      "week": "29",
+      "milestone": "Блок 9. Данные и аналитика",
+      "label": "block-9-data",
+      "prereq": [
+        "3.2",
+        "9.3"
+      ]
+    },
+    {
+      "id": "10.1",
+      "title": "10.1 Контейнеры и Kubernetes для архитектора",
+      "path": "10-infrastructure-delivery/10.1-containers-kubernetes.md",
+      "week": "30",
+      "milestone": "Блок 10. Инфраструктура и поставка",
+      "label": "block-10-infra",
+      "prereq": [
+        "Б.6"
+      ]
+    },
+    {
+      "id": "10.2",
+      "title": "10.2 CI/CD, стратегии релизов, feature flags",
+      "path": "10-infrastructure-delivery/10.2-cicd-release.md",
+      "week": "30",
+      "milestone": "Блок 10. Инфраструктура и поставка",
+      "label": "block-10-infra",
+      "prereq": [
+        "А.8",
+        "10.1"
+      ]
+    },
+    {
+      "id": "10.3",
+      "title": "10.3 Облака: сервисы, модели, привязка к вендору",
+      "path": "10-infrastructure-delivery/10.3-cloud.md",
+      "week": "31",
+      "milestone": "Блок 10. Инфраструктура и поставка",
+      "label": "block-10-infra",
+      "prereq": [
+        "Б.6",
+        "10.1"
+      ]
+    },
+    {
+      "id": "10.4",
+      "title": "10.4 Отказоустойчивость, аварийное восстановление, мультирегион",
+      "path": "10-infrastructure-delivery/10.4-dr-multiregion.md",
+      "week": "31",
+      "milestone": "Блок 10. Инфраструктура и поставка",
+      "label": "block-10-infra",
+      "prereq": [
+        "Б.8",
+        "2.6",
+        "3.6"
+      ]
+    },
+    {
+      "id": "10.5",
+      "title": "10.5 SRE-практики, управление инцидентами и стоимость (FinOps)",
+      "path": "10-infrastructure-delivery/10.5-sre-finops.md",
+      "week": "31",
+      "milestone": "Блок 10. Инфраструктура и поставка",
+      "label": "block-10-infra",
+      "prereq": [
+        "3.7",
+        "10.4"
+      ]
+    },
+    {
+      "id": "11.1",
+      "title": "11.1 Работа со стейкхолдерами и влияние без полномочий",
+      "path": "11-architect-role/11.1-stakeholders.md",
+      "week": "19",
+      "milestone": "Блок 11. Архитектор как роль",
+      "label": "block-11-role",
+      "prereq": [
+        "А.9"
+      ]
+    },
+    {
+      "id": "11.2",
+      "title": "11.2 Архитектурное ревью: как проводить и как проходить",
+      "path": "11-architect-role/11.2-architecture-review.md",
+      "week": "20",
+      "milestone": "Блок 11. Архитектор как роль",
+      "label": "block-11-role",
+      "prereq": [
+        "6.2",
+        "6.4"
+      ]
+    },
+    {
+      "id": "11.3",
+      "title": "11.3 Оценка трудоёмкости и работа с неопределённостью",
+      "path": "11-architect-role/11.3-estimation.md",
+      "week": "21",
+      "milestone": "Блок 11. Архитектор как роль",
+      "label": "block-11-role",
+      "prereq": [
+        "А.8"
+      ]
+    },
+    {
+      "id": "11.4",
+      "title": "11.4 Фасилитация: воркшопы, групповые решения, конфликты",
+      "path": "11-architect-role/11.4-facilitation.md",
+      "week": "22",
+      "milestone": "Блок 11. Архитектор как роль",
+      "label": "block-11-role",
+      "prereq": [
+        "11.1"
+      ]
+    },
+    {
+      "id": "11.5",
+      "title": "11.5 Поведенческое интервью и рассказ о своём опыте",
+      "path": "11-architect-role/11.5-behavioral-interview.md",
+      "week": "23–24",
+      "milestone": "Блок 11. Архитектор как роль",
+      "label": "block-11-role",
+      "prereq": [
+        "11.1"
+      ]
+    }
+  ]
+}
